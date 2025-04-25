@@ -1,0 +1,16 @@
+{
+	"compilerOptions": {
+		"target": "es6",
+		"module": "ESNext",
+		"importHelpers": false,
+		"moduleResolution": "node",
+		"strict": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		// "outDir": "./dist",
+		"rootDir": "./src"
+	},
+	"include": ["src/**/*", "playground/**/*"], // Include playground files
+	"exclude": ["node_modules", "**/*.spec.ts"]
+}
