@@ -1,4 +1,4 @@
-# sense-device-identity
+# sense-user-activity-js
 <h1 align="center">Understanding User Intent : Sense</h1>
 
 <p align="center" width="100%">
@@ -48,31 +48,20 @@ notice how the visitor identifier remains the same in spite of all these changes
 
 #### MIT license : 
 
+Sense OS is available under the <a href="https://github.com/sense-opensource/sense-user-activity-js/blob/main/LICENSE"> MIT license </a>
+
 #### Contributors code of conduct : 
+
+Thank you for your interest in contributing to this project! We welcome all contributions and are excited to have you join our community. Please read these <a href="https://github.com/sense-opensource/sense-user-activity-js/blob/main/code_of_conduct.md"> code of conduct </a> to ensure a smooth collaboration.
 
 #### Where you can get support :     
 ![Gmail](https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white)       product@getsense.co 
 
-#### Contributing guidelines :
+Public Support:
+For questions, bug reports, or feature requests, please use the Issues and Discussions sections on our repository. This helps the entire community benefit from shared knowledge and solutions.
 
-#### What's New : 
+Community Chat:
+Join our Discord server (link) to connect with other developers, ask questions in real-time, and share your feedback on Sense.
 
-[02/24/2025]: Face parameters update  
-```
-We’ve trained the model for an increased accuracy of 94%.   
-
-Here’s the installation steps : 
-
-1. Click on the download link  
-2. Download the model file and push it to the file directory  
-3. Run the file file  
-4. Restart the docker  
-
-```
-[08/27/2024]: User behavior added signals 
-```
-A new set of signals that track the user behaviour data has been 
-added to the code. These signals analyse the typing speed and the 
-duration between letter clicks on the keyboard 
-
-```
+Interested in contributing to Sense?
+Please review our <a href="https://github.com/sense-opensource/sense-user-activity-js/blob/main/CONTRIBUTING.md"> Contribution Guidelines </a> to learn how to get started, submit pull requests, or run the project locally. We encourage you to read these guidelines carefully before making any contributions. Your input helps us make Sense better for everyone!
