@@ -1,10 +1,13 @@
 <h1 align="center">Sense User Activity JS</h1>
 
 <p align="center" width="100%">
-<img width="9%" src="https://custom-icon-badges.demolab.com/github/license/denvercoder1/custom-icon-badges?logo=law"> 
-<img width="12.6%" src="https://badge-generator.vercel.app/api?icon=Github&label=Last%20Commit&status=May&color=6941C6"/> 
-<img width="10%" src="https://badge-generator.vercel.app/api?icon=Discord&label=Discord&status=Live&color=6941C6"> 
-</p>
+    <a href="https://github.com/sense-opensource/sense-user-activity-js/blob/main/LICENSE"> 
+        <img width="9%" src="https://custom-icon-badges.demolab.com/github/license/denvercoder1/custom-icon-badges?logo=law"> 
+    </a>
+    <img width="12.6%" src="https://badge-generator.vercel.app/api?icon=Github&label=Last%20Commit&status=May&color=6941C6"/> 
+    <a href="https://discord.gg/hzNHTpwt">
+        <img width="10%" src="https://badge-generator.vercel.app/api?icon=Discord&label=Discord&status=Live&color=6941C6"> 
+    </a>
 </p>
 
 <h2 align="center">Welcome to Sense’s open source repository</h2>
