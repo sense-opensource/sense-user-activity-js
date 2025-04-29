@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Sense Playground</title>
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
         <link rel="stylesheet" href="./style.css">
         <link rel="stylesheet" href="./style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,11 +16,11 @@
         <header>
             <div class="container">
                 <div class="d-flex">
-                    <a href="" class="sense-logo"><img src="./sense-logo.svg" alt=""></a>
-                    <a href="" class="toggle-icon"><img src="./images/mob-res.svg" alt=""></a>
+                    <a href="https://pro.getsense.co/" class="sense-logo"><img src="./images/sense-logo.svg" alt=""></a>
+                    <a href="https://pro.getsense.co/" class="toggle-icon"><img src="./images/mob-res.svg" alt=""></a>
                     <div class="right-btn-wrapper">
-                        <a href="" class="discord-btn"><img src="./images/discord-icon.svg" alt="">Discord</a>
-                        <a href="" class="git-btn"><img src="./images/git-icon.svg" alt="">Github</a>
+                        <a href="https://discord.gg/hzNHTpwt" class="discord-btn"><img src="./images/discord-icon.svg" alt="">Discord</a>
+                        <a href="https://github.com/sense-opensource/sense-user-activity-js" class="git-btn"><img src="./images/git-icon.svg" alt="">Github</a>
                     </div> 
                 </div>
             </div> 
@@ -48,8 +49,8 @@
                         </div>
                         <p class="content-sm">How a user hold the phone during an event and the changes in the position for subsequent events.</p>
                         <div class="btns-wrapper">
-                            <button onclick="copyJSON()">Copy Debug Data</button>
-                            <button>Share Debug Data</button>
+                            <button onclick="copyJSON()">Copy Debug</button>
+                            <button id="shareDebug">Share Debug</button>
                         </div>
                     </div>
                     <div class="form-op-wrapper">
@@ -78,12 +79,9 @@
                 <div class="flex-footer">
                     <div class="">© <span id="year-current"></span> Sense. All rights reserved.</div>
                     <div class="social-icons">
-                        <div class=""><img src="./images/x-icon.svg" alt="social-icon"></div>
-                        <div class=""><img src="./images/linkedin.svg" alt="social-icon"></div>
-                        <div class=""><img src="./images/github-icons.svg" alt="social-icon"></div>
-                        <div class=""><img src="./images/facebook.svg" alt="social-icon"></div>
-                        <div class=""><img src="./images/dribble.svg" alt="social-icon"></div>
-                        <div class=""><img src="./images/angellist.svg" alt="social-icon"></div>
+                        <a href="https://x.com/get_sensed"><img src="./images/x-icon.svg" alt="social-icon"></a>
+                        <a href="https://www.linkedin.com/company/getsensepro"><img src="./images/linkedin.svg" alt="social-icon"></a>
+                        <a href="https://github.com/sense-opensource/sense-user-activity-js"><img src="./images/github-icons.svg" alt="social-icon"></a>
                     </div>
                 </div>
             </div>
@@ -104,6 +102,21 @@
                 const textToCopy = copyDiv.innerText || copyDiv.textContent;
                 navigator.clipboard.writeText(textToCopy)
             };
+
+            document.getElementById("shareDebug").addEventListener('click', async () => {
+                const copyDiv = document.getElementById('result');
+                const textToCopy = copyDiv.innerText || copyDiv.textContent;
+                if (navigator.share) {
+                    try {
+                        await navigator.share({ text: textToCopy });
+                        console.log('✅ Shared successfully');
+                    } catch (error) {
+                        console.error('❌ Error sharing:', error);
+                    }
+                } else {
+                    alert('Sharing not supported on this browser. Please copy the link manually.');
+                }
+            });
 
         </script>
     </body>
