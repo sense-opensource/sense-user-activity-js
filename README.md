@@ -24,33 +24,35 @@
 
 <h3 align="center">Getting started with Sense </h3>
 
-```
-# Run the playground locally
-npm run playground
+#### Bash
+    ```bash
+    # Run the playground locally
+    npm run playground
 
+    # Build the project and generate the dist folder
+    npm run build
 
-# Build the project and generate the dist folder
-npm run build
+    ```
 
+#### JS Integration
+```js
+    // Include the Sense library 
+    <script src="./sense.js"></script>
 
-# JS Integration
+    // 🔧 Initialise the Sense library
+    Sense.initSenseBehaviour();
 
-        <!-- Include the Sense library -->
-        <script src="./sense.js"></script>
+    // / 📍 This code monitors input fields that include the data-behaviour attribute.
+    // Example: <input type="text" data-behaviour="name" />
 
-       // 🔧 Initialise the Sense library
-        Sense.initSenseBehaviour();
+    // 🧠 Get user behaviour data
+    const behaviour = Sense.getBehaviour();
 
-        // 📍 This code monitors input fields that include the data-behaviour attribute.
-        // Example: <input type="text" data-behaviour="name" />
-
-        // 🧠 Get user behaviour data
-        const behaviour = Sense.getBehaviour();
-
-        // OR use destructuring to access specific metrics
-        const { keyStrokeData, mouseMovements, scrollMetrics } = Sense.getBehaviour();
+    // OR use destructuring to access specific metrics  -->
+    const { keyStrokeData, mouseMovements, scrollMetrics } = Sense.getBehaviour();
 
 ``` 
+</pre>
 
 <h3 align="center">Run this code here : (sandbox environment to check and verify the code)</h3>
 
