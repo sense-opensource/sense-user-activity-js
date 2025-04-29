@@ -14,15 +14,13 @@
 
 <p style="text-align:center;"> 
   
-
 <p align="center"> Sense is a client side library that enables you to identify users by pinpointing their hardware and software characteristics. This is done by computing a token that stays consistent in spite of any manipulation.</p>                           
 <p align="center"> This tracking method works even in the browser's incognito mode and is not cleared by flushing the cache, closing the browser or restarting the operating system, using a VPN or installing AdBlockers. Sense is available as SenseOS for every open source requirement and is different from Sense PRO, our extremely accurate and detailed product.</p>
 
 
 <p align="center"> Sense’s real time demo : https://pro.getsense.co/
 
-*** Try visiting the same page in an incognito mode or switch on the VPN and 
-notice how the visitor identifier remains the same in spite of all these changes!*** 
+**Try visiting the same page in an incognito mode or switch on the VPN and notice how the visitor identifier remains the same in spite of all these changes!** 
 
 <h3 align="center">Getting started with Sense </h3>
 
@@ -51,7 +49,6 @@ npm run build
 
         // OR use destructuring to access specific metrics
         const { keyStrokeData, mouseMovements, scrollMetrics } = Sense.getBehaviour();
-
 
 ``` 
 
