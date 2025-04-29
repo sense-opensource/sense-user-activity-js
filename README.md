@@ -25,14 +25,14 @@
 <h3 align="center">Getting started with Sense </h3>
 
 #### Bash
-    ```bash
+```bash
     # Run the playground locally
     npm run playground
 
     # Build the project and generate the dist folder
     npm run build
 
-    ```
+```
 
 #### JS Integration
 ```js
