@@ -86,12 +86,12 @@
                 </div>
             </div>
         </footer>
-        <script src="bundle.js"></script>
+        <script src="sense.js"></script>
         <script>
-            Sense.initSenseBehaviour();//Initialise the Sense library
+            SenseOS.initSenseBehaviour();//Initialise the Sense library
             const resultDiv = document.getElementById('result');
             const getBehaviour = (element) => {
-                const sense = Sense.getBehaviour();
+                const sense = SenseOS.getBehaviour();
                 const senseResult = document.createElement('pre');
                 senseResult.innerHTML = JSON.stringify(sense, null, 2);
                 resultDiv.appendChild(senseResult);

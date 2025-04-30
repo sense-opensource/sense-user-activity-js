@@ -27,27 +27,30 @@
 
 #### Bash
 ```bash
+    # Install all dependencies (including dev dependencies)
+    npm install
+    # or
+    npm i
+
     # Run the playground locally
     npm run playground
 
     # Build the project and generate the dist folder
     npm run build
-
 ```
-
 #### JS Integration
 ```js
     // Include the Sense library 
     <script src="./sense.js"></script>
 
     // 🔧 Initialise the Sense library
-    Sense.initSenseBehaviour();
+    SenseOS.initSenseBehaviour();
 
     // / 📍 This code monitors input fields that include the data-behaviour attribute.
     // Example: <input type="text" data-behaviour="name" />
 
     // 🧠 Get user behaviour data
-    const behaviour = Sense.getBehaviour();
+    const behaviour = SenseOS.getBehaviour();
 
     // OR use destructuring to access specific metrics  -->
     const { keyStrokeData, mouseMovements, scrollMetrics } = Sense.getBehaviour();
