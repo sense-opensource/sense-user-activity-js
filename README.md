@@ -20,8 +20,6 @@
 <p> This tracking method works even in the browser's incognito mode and is not cleared by flushing the cache, closing the browser or restarting the operating system, using a VPN or installing AdBlockers. Sense is available as SenseOS for every open source requirement and is different from Sense PRO, our extremely accurate and detailed product.</p>
 
 
-<p> Sense’s real time demo : https://pro.getsense.co/
-
 **Try visiting the same page in an incognito mode or switch on the VPN and notice how the visitor identifier remains the same in spite of all these changes!** 
 
 <h3>Getting started with Sense </h3>
@@ -64,7 +62,7 @@
 <h4>Plug and play, in just 3 steps</h3>  
 
 1️⃣ Visit the Git hub repository for the desired function : Validate your desired repository  
-2️⃣ Download the code as a ZIP file : Host/clone the code in your local system or website  
+2️⃣ Download the code as a ZIP file : Clone the code in your local system
 3️⃣ Run the installer : Start testing the accuracy of your desired metrics 
 
 #### With Sense, you can  
