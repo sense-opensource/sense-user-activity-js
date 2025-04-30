@@ -16,11 +16,7 @@
 <img width="4.5%" src="https://custom-icon-badges.demolab.com/badge/Fork-orange.svg?logo=fork"> <img width="4.5%" src="https://custom-icon-badges.demolab.com/badge/Star-yellow.svg?logo=star"> <img width="6.5%" src="https://custom-icon-badges.demolab.com/badge/Commit-green.svg?logo=git-commit&logoColor=fff"> 
 </p> 
   
-<p> Sense is a client side library that enables you to identify users by pinpointing their hardware and software characteristics. This is done by computing a token that stays consistent in spite of any manipulation.</p>                           
-<p> This tracking method works even in the browser's incognito mode and is not cleared by flushing the cache, closing the browser or restarting the operating system, using a VPN or installing AdBlockers. Sense is available as SenseOS for every open source requirement and is different from Sense PRO, our extremely accurate and detailed product.</p>
-
-
-**Try visiting the same page in an incognito mode or switch on the VPN and notice how the visitor identifier remains the same in spite of all these changes!** 
+<p> Sense is a client side library that enables you to identify users by pinpointing their hardware and software characteristics. This is done by computing a token that stays consistent in spite of any manipulation.</p>     
 
 <h3>Getting started with Sense </h3>
 
@@ -57,13 +53,12 @@
 ``` 
 </pre>
 
-<h3>Run this code here : (sandbox environment to check and verify the code)</h3>
+<h4>Plug and play, in just 4 steps</h3>  
 
-<h4>Plug and play, in just 3 steps</h3>  
-
-1️⃣ Visit the Git hub repository for the desired function : Validate your desired repository  
-2️⃣ Download the code as a ZIP file : Clone the code in your local system
-3️⃣ Run the installer : Start testing the accuracy of your desired metrics 
+1️⃣ Visit the GitHub Repository</br>
+2️⃣ Download or Clone the Repository. Use the GitHub interface to download the ZIP file, or run.</br>
+3️⃣ Run the Installer / Setup Script. Follow the setup instructions provided below.</br>
+4️⃣ Start Testing. Once installed, begin testing and validating the accuracy of the metrics you're interested in.</br>
 
 #### With Sense, you can  
 
