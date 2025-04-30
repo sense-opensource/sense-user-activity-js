@@ -10,7 +10,7 @@
 		"lint": "eslint . --ext .ts --rule 'indent: [error, tab]'",
 		"format": "prettier --write .",
 		"lint:fix": "eslint . --ext .ts --fix",
-		"playground": "rm -rf playground/bundle.js && rollup -c --environment BUILD:playground && live-server playground -c-1 --host=localhost"
+		"playground": "rm -rf playground/sense.js && rollup -c --environment BUILD:playground && live-server playground -c-1 --host=localhost"
 	},
 	"repository": {
 		"type": "git",
