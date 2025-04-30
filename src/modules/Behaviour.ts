@@ -237,6 +237,6 @@ export const initSenseBehaviour = async () => {
 
 const keysToLowerCase = (obj : {[key: string]: number}) => {
     return Object.fromEntries(
-        Object.entries(obj).map(([key, value]) => [key.toLowerCase(), value])
+        Object.entries(obj).map(([key, value]: [string, any]) => [key.toLowerCase(), value])
     );
 }

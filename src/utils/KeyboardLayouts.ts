@@ -39,7 +39,7 @@ export const detectKeyboardLayout = async (): Promise<Layout> => {
 
     for (const { name, keys } of layouts) {
         const isMatch = Object.entries(keys).every(
-        ([key, value]) => sampleKeys[key] === value
+            ([key, value]: [string, string]) => sampleKeys[key] === value
         );
         if (isMatch) {
         return name;
