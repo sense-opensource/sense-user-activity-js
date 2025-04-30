@@ -41,7 +41,7 @@
 #### JS Integration
 ```js
     // Include the Sense library 
-    <script src="./sense.js"></script>
+    <script src="https://cdn.getsense.co/js/v1/senseos/sense-user-activity-js"></script>
 
     // 🔧 Initialise the Sense library
     SenseOS.initSenseBehaviour();
