@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sense Playground</title>
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="d-flex">
+                    <a href="https://pro.getsense.co/" class="sense-logo"><img src="./images/sense-logo.svg" alt=""></a>
+                    <a href="https://pro.getsense.co/" class="toggle-icon"><img src="./images/mob-res.svg" alt=""></a>
+                    <div class="right-btn-wrapper">
+                        <a href="https://discord.gg/hzNHTpwt" class="discord-btn"><img src="./images/discord-icon.svg" alt="">Discord</a>
+                        <a href="https://github.com/sense-opensource/sense-user-activity-js" class="git-btn"><img src="./images/git-icon.svg" alt="">Github</a>
+                    </div> 
+                </div>
+            </div> 
+        </header> 
+        <section class="dynamic-data-wrapper">
+            <div class="container">
+                <div class="sense-os-title-wrapper">
+                    <div class="sense-header">
+                        <p class="title-sm">Product Showcase</p>
+                        <div class="main-title">Smart <span class="sense-highlight">detection</span>, against all odds</div>
+                    </div>
+                    <div class="sense-sub-content">
+                        Secure your applications with our intelligent and feature-rich platform that <br>
+                        delivers your fraud prevention needs.
+                    </div>
+                </div>
+                <div class="sense-data-tab-wrapper">
+                    <div class="tool-bar">
+                        <div class="sense-tool red-one"></div>
+                        <div class="sense-tool yellow-two"></div>
+                        <div class="sense-tool green-three"></div>
+                    </div>
+                    <div class="tab-header">
+                        <div class="tab-main-title">
+                            Hello, Fellow Developer!
+                        </div>
+                        <p class="content-sm">How a user hold the phone during an event and the changes in the position for subsequent events.</p>
+                        <div class="btns-wrapper">
+                            <button onclick="copyJSON()">Copy Debug</button>
+                            <button id="shareDebug">Share Debug</button>
+                        </div>
+                    </div>
+                    <div class="form-op-wrapper">
+                        <form action="/submit" method="POST">
+                            <div class="form-label"><label for="name">Name</label></div>
+                            <div class="form-input"><input type="text" id="name" name="name" data-behaviour="name" placeholder="Enter your name" required></div>
+                            <div class="form-label"><label for="email">Email</label></div>
+                            <div class="form-input"><input type="email" id="email" name="email"  data-behaviour="email" placeholder="Enter your email" required></div>
+                            <div class="form-label"><label for="message">Message</label></div>
+                            <div class="form-input"><textarea id="message" name="message" rows="4" cols="50" data-behaviour="message" placeholder="Enter message" required></textarea></div>
+                            <input type="button" class="git-btn w-100" onclick="return getBehaviour()" value="Submit">
+                        </form>
+                        <div>
+                            <div class="data-wrapper">
+                                <div class="details-display-container" id="result">
+                                    
+                                </div>
+                            </div> 
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="flex-footer">
+                    <div class="">© <span id="year-current"></span> Sense. All rights reserved.</div>
+                    <div class="social-icons">
+                        <a href="https://x.com/get_sensed"><img src="./images/x-icon.svg" alt="social-icon"></a>
+                        <a href="https://www.linkedin.com/company/getsensepro"><img src="./images/linkedin.svg" alt="social-icon"></a>
+                        <a href="https://github.com/sense-opensource/sense-user-activity-js"><img src="./images/github-icons.svg" alt="social-icon"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="sense.js"></script>
+        <script>
+            SenseOS.initSenseBehaviour();//Initialise the Sense library
+            const resultDiv = document.getElementById('result');
+            const getBehaviour = (element) => {
+                const sense = SenseOS.getBehaviour();
+                const senseResult = document.createElement('pre');
+                senseResult.innerHTML = JSON.stringify(sense, null, 2);
+                resultDiv.appendChild(senseResult);
+            };
+            // Example usage of the Sense library
+            const copyJSON = () => {
+                const copyDiv = document.getElementById('result');
+                const textToCopy = copyDiv.innerText || copyDiv.textContent;
+                navigator.clipboard.writeText(textToCopy)
+            };
+
+            document.getElementById("shareDebug").addEventListener('click', async () => {
+                const copyDiv = document.getElementById('result');
+                const textToCopy = copyDiv.innerText || copyDiv.textContent;
+                if (navigator.share) {
+                    try {
+                        await navigator.share({ text: textToCopy });
+                        console.log('✅ Shared successfully');
+                    } catch (error) {
+                        console.error('❌ Error sharing:', error);
+                    }
+                } else {
+                    alert('Sharing not supported on this browser. Please copy the link manually.');
+                }
+            });
+
+        </script>
+    </body>
+</html>
